@@ -1,0 +1,31 @@
+{
+	"name":"test-evil-repo",
+	"fullName": "Simple Feed",
+	"version":"0.1.1",
+	"description":"Display the item titles with thumbnails",
+	"joshfire":{
+		"datasources":{
+			"main":{
+				"title":"Feed to display"
+			}
+		},
+		"options": {
+			"schema": {
+		        "limit": {
+		        	"title": "Number of items",
+		        	"type": "integer"
+		        }
+      		},
+			"form": [
+	      		"datasources.main",
+	      		"limit"
+	      	]
+	    },
+	    "devices": [
+			{
+				"devices": "*",
+				"startfile": "index.html"
+			}
+		]
+	}
+}
